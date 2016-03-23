@@ -107,7 +107,7 @@ header {
   float: right;
   height: 1900px;
   width: 315px;
-  margin-right: -65px;
+  margin-right: -70px;
 }
 
 .logo {
@@ -141,7 +141,7 @@ header {
   list-style-type: none;
   font-size: 24px;
   font-weight: 300;
-  text-align: left;
+  padding-left: 0;
 }
 
 .categories a{
