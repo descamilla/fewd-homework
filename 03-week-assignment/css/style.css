@@ -27,6 +27,10 @@ P {
   color: #606161;
 }
 
+HR {
+  color: #033048;
+}
+
 a {
   text-decoration: none;
 }
@@ -141,11 +145,17 @@ header {
 }
 
 .categories a{
-  color:#606161;
+  color:#033048;
 }
 
 .about p {
   font-size: 21px;
+}
+
+.lorem::first-letter {
+  font-size: 70px;
+  font-weight: 600;
+  float: left;
 }
 
 #ad_unit h2{
