@@ -1,0 +1,28 @@
+BODY {
+  font-family: 'Indie Flower', cursive;
+}
+/*H1 {
+  font-size: 50px;
+}*/
+P {
+  font-size: 50px;
+}
+DIV {
+  border: solid 1px red;
+}
+.red {
+  border: solid 5px black;
+  background-color: red;
+  width: 400px;
+  overflow: auto;
+  float: left;
+}
+
+.blue {
+border:solid 5px black;
+background-color: dodgerblue;
+width: 400px;
+margin-top: 40px;
+float: left;
+
+}

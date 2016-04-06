@@ -59,6 +59,13 @@ header .btn {
   background-color: #f9e42e;
 }
 
+header a{
+  color: #033048;
+}
+
+#sign_up a{
+  color: white;
+}
 #sign_up .btn {
   color: #FFF;
   background-color: #033048;

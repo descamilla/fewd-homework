@@ -35,8 +35,8 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-    color: inherit;;
+a:hover {
+    color: white;
 }
 
 /* navbar */
@@ -114,7 +114,7 @@ header {
   float: left;
   display: inline;
   margin-top: 5px;
-  margin-left: 56px;
+  margin-left: 230px;
   font-size: 48px;
   font-weight: 800;
 }
