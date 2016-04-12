@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color:white;
+  font-family: 'Graduate', cursive;
+  text-align: center;
+}
+
+body.red{
+  background: red;
+  color:white;
+}
+
+body.white{
+  background:white;
+  color:black;
+}
+
+#submit {
+  background-color: orange;
+  padding: 10px;
+  color:000;
+  font-size: 16px;
+  border-radius: 3px;
+  border:none;
+}
+
+input {
+  padding:10px 5px;
+  width:300px;
+
+}
+/* Your CSS goes here */
