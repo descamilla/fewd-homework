@@ -14,14 +14,14 @@ $(document).ready(function() {
   //var colors = []
 
 
-  $('#submit').click(backgroundColor)
+  //$('#submit').click(backgroundColor)
 
-  function backgroundColor(){
-      $("body").css({background:"white",color:"black"});
-      $("body").css({background:"red",color:"white"});
-     $('body').attr('class','red');
-    }
-
+  //function backgroundColor(){
+  //    $("body").css({background:"white",color:"black"});
+    //  $("body").css({background:"red",color:"white"});
+     //$('body').attr('class','red');
+    //}
+//
 
 
 });

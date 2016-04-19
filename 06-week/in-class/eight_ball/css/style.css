@@ -5,6 +5,7 @@ body {
   text-align: center;
 }
 
+/*
 body.red{
   background: red;
   color:white;
@@ -14,7 +15,7 @@ body.white{
   background:white;
   color:black;
 }
-
+*/
 #submit {
   background-color: orange;
   padding: 10px;
