@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>To Do List</title>
+		<link rel="stylesheet" href="css/normalize.css" media="screen" type="text/css">
+		<link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+	</head>
+	<body>
+		<div id="app">
+			<header>
+				<form id="new">
+					<input id="newItem"> <button id="add">Add to List</button>
+				</form>
+			</header>
+			<ul id="todos">
+				<!-- begin sample todo - remove it -->
+				<li> 
+					<span class="item">This is a sample todo item. Remove it from html and add these dynamically</span>
+					<a class="edit">Edit</a>
+					<a class="remove">Remove</a>
+				</li>
+				<!-- end sample todo - remove it -->
+			</ul>
+			<footer>
+				<div class="status">
+					<p>
+						You have <span id="count">0</span> todos left.
+					</p>
+				</div>
+				<div class="controls">
+					<button id="clear">Clear List</button>
+					<button id="clearCompleted">Clear Completed</button>
+				</div>
+			</footer>
+		</div>
+		<script src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
