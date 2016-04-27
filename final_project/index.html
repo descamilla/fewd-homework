@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Bitter' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/smooth-scroll.js"></script>
   </head>
   <body>
   <section id="homepage">
@@ -15,9 +16,9 @@
     <!-- nav shuttles down to relevant section. will apply JQUERY smooth scroll -->
     <div class="nav">
       <ul>
-        <a href="#about">About</a>
-        <a href="#stopby">Stop By</a>
-        <a href="#kit">Keep In Touch</a>
+        <a data-scroll href="#about">About</a>
+        <a data-scroll href="#stopby">Stop By</a>
+        <a data-scroll href="#kit">Keep In Touch</a>
       </ul>
 
       <!--
@@ -28,37 +29,40 @@
 
   <section id="about">
     <!-- #about will consist of both #about and #moreabout sections -->
-    <h1>WELCOME TO THE HOUSE</h1>
-    <p>
-      Come by The House and enjoy freshly made boozy ice cream and a brew from a local brewery, or bring the kids in to enjoy a dip of one of our kid-friendly flavors.
-    </p>
-  </section>
-
-  <section id="moreabout">
-    <div class="kids">
-      <img src="./images/glasses.jpg" alt="Ice Cream" />
-      <h2>Savor The Flavor</h2>
+    <div class ="welcome">
+      <h1>WELCOME TO THE HOUSE</h1>
         <p>
-          Homemade ice cream flavors for adults and kids
+          Come by The House and enjoy freshly made boozy ice cream and a brew from a local brewery,
+          <br>
+          or bring the kids in to enjoy a dip of one of our kid-friendly flavors.
         </p>
-    </section>
+    </div>
+    <div class="container">
+    <div class="kids">
+      <img src="./images/glasses.png" alt="Ice Cream" />
+      <h2>Savor</h2>
+        <p>
+          Homemade ice cream for adults & kids
+        </p>
+    </div>
 
     <div class ="brews">
-      <img src="./images/brews.jpg" alt="Ice Cream" />
-      <h2>Relax At The Bar</h2>
+      <img src="./images/brews.png" alt="Ice Cream" />
+      <h2>Sip</h2>
         <p>
-          Enjoy an ice cream with a local brew
+          Nice local brew selection
         </p>
     </div>
 
     <div class="art">
-      <img src="./images/art_2.jpg" alt="The House Art" />
-      <h2>Check Out The Artistry</h2>
+      <img src="./images/art_2.png" alt="The House Art" />
+      <h2>See</h2>
         <p>
-          Flavors changed daily and new art work showcased monthly
+           New artists showcased monthly
         </p>
     </div>
   </div>
+  </section>
 
   <section id="stopby">
     <!-- #stopby incorporates a dynamic google map api and general information -->
@@ -95,7 +99,7 @@
       </div>
 
       <div class="storefront">
-        <img src="./images/house_front.jpg" alt="House Entrance" />
+        <img src="./images/house_front.png" alt="House Entrance" />
       </div>
     </div>
   </section>
@@ -105,6 +109,12 @@
     <h2>Keep In Touch</h2>
         <a href="https://www.facebook.com/thehousesa/timeline" target="blank"><img src="./images/fb2.png" alt="facebook" /></a>
         <a href="https://www.instagram.com/thehousesa/" target="blank"><img src="./images/instagram2.png" alt="instagram" /></a>
+
+    <div class="email">
+        <form action="http://jsonplaceholder.typicode.com/posts" method="post">
+          <label for="email">Get Updates</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+    </div>
   </section>
 
   <section id="footer">
@@ -112,6 +122,7 @@
     <p class="copyright">
       &copy 2016 The House
     </p>
+    <script>smoothScroll.init();</script>
   </section>
 
   </body>
