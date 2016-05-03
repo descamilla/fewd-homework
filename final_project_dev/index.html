@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>The House Boozy Ice Cream</title>
+
+  <!--linked stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/subscribe-better.css">
+    <link rel="stylesheet" href="css/hamburgler.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Bitter' rel='stylesheet' type='text/css'>
+
+  <!--linked javascript -->
     <script src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/hamburgler.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/jquery.subscribe-better.js"></script>
   </head>
@@ -27,12 +34,12 @@
 
   <section id="homepage">
     <!-- #homepage will consist of large image and nav only-->
-    <!-- nav shuttles down to relevant section. will apply JQUERY smooth scroll -->
+    <!-- nav shuttles down to relevant section. Applying JQUERY smooth scroll -->
     <div class="mobilenav">
       <ul>
-        <li><a class = "btn" data-scroll href="#about">About</a></li>
-        <li><a class = "btn" data-scroll href="#stopby">Stop By</a></li>
-        <li><a class = "btn" data-scroll href="#kit">Keep In Touch</a></li>
+        <li><a data-scroll href="#about">About</a></li>
+        <li><a data-scroll href="#stopby">Stop By</a></li>
+        <li><a data-scroll href="#kit">Keep In Touch</a></li>
       </ul>
     </div>
 
@@ -43,7 +50,6 @@
         <div class="menui bottom-menu"></div>
       </div>
     </a>
-    
   </section>
 
   <section id="about">
