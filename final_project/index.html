@@ -2,13 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
     <title>The House Boozy Ice Cream</title>
+
+  <!--linked stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/subscribe-better.css">
+    <link rel="stylesheet" href="css/hamburgler.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Bitter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+  <!--linked javascript -->
     <script src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/hamburgler.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/jquery.subscribe-better.js"></script>
   </head>
@@ -25,14 +34,14 @@
         </form>
     </div>
 
-  <section id="homepage">
+  <div id="homepage">
     <!-- #homepage will consist of large image and nav only-->
-    <!-- nav shuttles down to relevant section. will apply JQUERY smooth scroll -->
+    <!-- nav shuttles down to relevant section. Applying JQUERY smooth scroll -->
     <div class="mobilenav">
       <ul>
-        <li><a class = "btn" data-scroll href="#about">About</a></li>
-        <li><a class = "btn" data-scroll href="#stopby">Stop By</a></li>
-        <li><a class = "btn" data-scroll href="#kit">Keep In Touch</a></li>
+        <li><a data-scroll href="#about">Welcome</a></li>
+        <li><a data-scroll href="#stopby">Stop By</a></li>
+        <li><a data-scroll href="#kit">Keep In Touch</a></li>
       </ul>
     </div>
 
@@ -43,10 +52,18 @@
         <div class="menui bottom-menu"></div>
       </div>
     </a>
-    
-  </section>
 
-  <section id="about">
+    <div class="show-on-desktop">
+      <!-- <img src="../images/house_homepage_large.png" alt=""> -->
+    </div>
+
+    <div class="show-on-mobile">
+      <!-- <img src="../images/house_homepage_small.png" alt=""> -->
+    </div>
+
+  </div>
+
+  <div id="about">
     <!-- #about will consist of both #about and #moreabout sections -->
     <div class ="welcome">
       <h1>WELCOME TO THE HOUSE</h1>
@@ -81,69 +98,58 @@
         </p>
     </div>
   </div>
-  </section>
+</div>
 
-  <section id="stopby">
+  <div id="stopby">
     <!-- #stopby incorporates a dynamic google map and general information -->
 
     <div class="location">
       <h2>Stop By and Visit</h2>
 
-        <div class ="address">
-          <h3>Address</h3>
-          <ul>
-            <li>732 S. Alamo St.</li>
-            <li>San Antonio, TX 78205</li>
-            <li>(210) 919-3553</li>
-          </ul>
-        </div>
-
-        <div class ="hours">
           <h3>Hours</h3>
-          <ul>
-            <li>Sunday - Monday: Closed</li>
-            <li>Tuesday - Friday: 4:00pm - 10:00 pm</li>
-            <li>Saturday: 2:00pm - 10:00pm</li>
-          </ul>
-        </div>
+          <span>Sunday - Monday: Closed</span><br>
+            <span>Tuesday - Friday: 4:00pm - 10:00 pm</span><br>
+            <span>Saturday: 2:00pm - 10:00pm</span><br>
       </div>
 
-      <!-- <div class="storefront">
-        <img src="./images/house_front.png" alt="House Entrance" />
-      </div> -->
-
-      <div class="google">  <!-- google map embed -->
-        <div class ="map">
+      <div class ="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.4233017088386!2d-98.49076618461102!3d29.416422154919662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58a8dc261dcd%3A0x6450f55a215e3f0d!2sThe+House!5e0!3m2!1sen!2sus!4v1461715532730"
             width="100%" height="400" frameborder="0" style="border:0"
             allowfullscreen>
           </iframe>
-        </div>
       </div>
 
-  </section>
+      <div class ="address">
+        <p>732 S. Alamo St. San Antonio, TX 78205 <br>(210) 919-3553</p>
+      </div>
+  </div>
 
-  <section id="kit">
+  <div id="kit">
     <!-- #kit is social icon images with links to channels -->
+    <div class ="social_links">
     <h2>Keep In Touch</h2>
-        <a href="https://www.facebook.com/thehousesa/timeline" target="blank"><img src="./images/fb2.png" alt="facebook" /></a>
-        <a href="https://www.instagram.com/thehousesa/" target="blank"><img src="./images/instagram2.png" alt="instagram" /></a>
+        <a href="https://www.facebook.com/thehousesa/timeline" target="blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/thehousesa/" target="blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+        <a href="http://www.yelp.com/biz/the-house-boozy-ice-cream-and-brews-san-antonio-2" target="blank"><i class="fa fa-yelp fa-3x" aria-hidden="true"></i></a>
+    </div>
 
     <div class="email">
         <form action="http://jsonplaceholder.typicode.com/posts" method="post">
-          <label for="email">Get The Scoop</label>
           <input type="email" id="email" name="email" placeholder="Enter your email">
           <input class= "btn" type="submit" value="Submit">
     </div>
-  </section>
 
-  <section id="footer">
+    <div>
+      <script src="http://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="http://snapwidget.com/in/?u=dGhlaG91c2VzYXxpbnwxMjV8NHw0fHxub3w1fG5vbmV8b25TdGFydHx5ZXN8eWVz&ve=050516" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+  </div>
+
+  <div id="footer">
     <!-- #footer is copyright line -->
-    <p class="copyright">
-      &copy 2016 The House
-    </p>
-  </section>
+    <p>&copy 2016 The House</p>
+  </div>
+
   <script>smoothScroll.init();</script>
   </body>
 </html>
